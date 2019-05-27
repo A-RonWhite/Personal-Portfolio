@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Gill Sans Ultra Bold";
+  src: url(../fonts/gill-sans-webfont/GillSansUltraBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Gill Sans Light";
+  src: url(../fonts/gill-sans-webfont/Gill-Sans-Light.woff) format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Shadows+Into+Light+Two&display=swap");
+
+body {
+  margin: 0;
+}
+
+nav {
+  color: white;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  .social {
+    height: 100%;
+    filter: invert(1);
+  }
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  li {
+    float: right;
+    padding: 0 3%;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    :focus {
+      color: white;
+    }
+  }
+}
+
+.container {
+  padding: 0 10%;
+}
+
+.cover-sec {
+  height: 100vh;
+  background: #253237;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  span {
+    display: block;
+    font-family: "Berkshire Swash", cursive;
+    /* font-family: "Shadows Into Light Two", cursive; */
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+  }
+  h1 {
+    font-family: "Gill Sans Ultra Bold";
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+    line-height: 5.4rem;
+    border-right: 1px solid white;
+  }
+  h2 {
+    width: 20%;
+    font-family: "Gill Sans Light";
+    padding-left: 1rem;
+  }
+}
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  img {
+    width: 100%;
+  }
+}
