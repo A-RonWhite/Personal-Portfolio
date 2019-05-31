@@ -12,7 +12,7 @@ class App extends React.Component {
         <LandingPage />
         <div className="container">
           <Bio />
-          <SkillList />
+          <SkillList addSkill={this.addSkill} loadSkills={this.loadSkills} />
         </div>
       </React.Fragment>
     );

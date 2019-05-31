@@ -122,6 +122,10 @@ nav {
   margin-left: -13%;
   margin-right: -13%;
   text-align: center;
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
   h3 {
   }
 }

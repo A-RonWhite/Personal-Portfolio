@@ -2,14 +2,34 @@ const skills = {
   skill1: {
     name: 'HTML 5',
     image: '/images/javascript-logo.png',
-    desc:
-      'Everyone’s favorite white fish. We will cut it to the size you need and ship it.',
   },
   skill2: {
-    name: 'Pacific Halibut',
+    name: 'CSS 3',
     image: '/images/javascript-logo.png',
-    desc:
-      'Everyone’s favorite white fish. We will cut it to the size you need and ship it.',
+  },
+  skill3: {
+    name: 'JavaScript (ES6)',
+    image: '/images/javascript-logo.png',
+  },
+  skill4: {
+    name: 'Sass',
+    image: '/images/javascript-logo.png',
+  },
+  skill5: {
+    name: 'Bootstrap',
+    image: '/images/javascript-logo.png',
+  },
+  skill6: {
+    name: 'Adobe Photoshop',
+    image: '/images/javascript-logo.png',
+  },
+  skill7: {
+    name: 'Adobe Illustator',
+    image: '/images/javascript-logo.png',
+  },
+  skill8: {
+    name: 'Adobe Xd',
+    image: '/images/javascript-logo.png',
   },
 };
 

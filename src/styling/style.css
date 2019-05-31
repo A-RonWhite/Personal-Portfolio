@@ -148,4 +148,11 @@ nav a :focus {
   margin-right: -13%;
   text-align: center;
 }
+
+.skills .skill-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+}
 /*# sourceMappingURL=style.css.map */
