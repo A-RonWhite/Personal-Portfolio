@@ -94,6 +94,8 @@ nav {
     width: 20%;
     font-family: "Gill Sans Light";
     padding-left: 2rem;
+    /* This is how I dropped it down, check to see if its responsive */
+    padding-top: 2rem;
   }
   #bobble {
     position: absolute;
@@ -116,16 +118,62 @@ nav {
 }
 
 .skills {
-  background: #ced9df;
+  /*   background: #ced9df; */
   margin-top: 10%;
   /* Look into at its super janky way of doing it */
-  margin-left: -13%;
-  margin-right: -13%;
+  /*   margin-left: -13%;
+  margin-right: -13%; */
   text-align: center;
+  position: relative;
   .skill-list {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    img {
+      width: 100%;
+    }
   }
   h3 {
   }
+  .foreground-bg {
+    height: 100%;
+    width: 100vw;
+    background: #253237;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+  }
+  .background-bg {
+    height: 100%;
+    width: 100vw;
+    background: #5c6b73;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -12.5%;
+    z-index: -20;
+    /*     padding: 10% 0;
+    margin-top: -10%; */
+  }
+}
+
+.employment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "heading heading";
+  padding-top: 10%;
+  h3 {
+    grid-area: heading;
+    text-align: center;
+  }
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20%;
+  padding-top: 10%;
+}
+
+.contact {
 }

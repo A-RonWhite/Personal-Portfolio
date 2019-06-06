@@ -31,6 +31,38 @@ const skills = {
     name: 'Adobe Xd',
     image: '/images/javascript-logo.png',
   },
+  skill9: {
+    name: 'HTML 5',
+    image: '/images/javascript-logo.png',
+  },
+  skill10: {
+    name: 'CSS 3',
+    image: '/images/javascript-logo.png',
+  },
+  skill11: {
+    name: 'JavaScript (ES6)',
+    image: '/images/javascript-logo.png',
+  },
+  skill12: {
+    name: 'Sass',
+    image: '/images/javascript-logo.png',
+  },
+  skill13: {
+    name: 'Bootstrap',
+    image: '/images/javascript-logo.png',
+  },
+  skill14: {
+    name: 'Adobe Photoshop',
+    image: '/images/javascript-logo.png',
+  },
+  skill15: {
+    name: 'Adobe Illustator',
+    image: '/images/javascript-logo.png',
+  },
+  skill16: {
+    name: 'Adobe Xd',
+    image: '/images/javascript-logo.png',
+  },
 };
 
 export default skills;

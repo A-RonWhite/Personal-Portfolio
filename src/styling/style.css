@@ -117,6 +117,8 @@ nav a :focus {
   width: 20%;
   font-family: "Gill Sans Light";
   padding-left: 2rem;
+  /* This is how I dropped it down, check to see if its responsive */
+  padding-top: 2rem;
 }
 
 .cover-sec #bobble {
@@ -141,18 +143,72 @@ nav a :focus {
 }
 
 .skills {
-  background: #ced9df;
+  /*   background: #ced9df; */
   margin-top: 10%;
   /* Look into at its super janky way of doing it */
-  margin-left: -13%;
-  margin-right: -13%;
+  /*   margin-left: -13%;
+  margin-right: -13%; */
   text-align: center;
+  position: relative;
 }
 
 .skills .skill-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.skills .skill-list img {
+  width: 100%;
+}
+
+.skills .foreground-bg {
+  height: 100%;
+  width: 100vw;
+  background: #253237;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+}
+
+.skills .background-bg {
+  height: 100%;
+  width: 100vw;
+  background: #5c6b73;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -12.5%;
+  z-index: -20;
+  /*     padding: 10% 0;
+    margin-top: -10%; */
+}
+
+.employment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "heading heading";
+  padding-top: 10%;
+}
+
+.employment h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: heading;
+  text-align: center;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20%;
+  padding-top: 10%;
 }
 /*# sourceMappingURL=style.css.map */
