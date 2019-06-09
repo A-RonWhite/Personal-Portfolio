@@ -32,7 +32,7 @@ const skills = [
     image: '/images/javascript-logo.png',
   },
   {
-    name: 'HTML 5',
+    name: 'HTML 99',
     image: '/images/javascript-logo.png',
   },
 ];

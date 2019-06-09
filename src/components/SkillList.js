@@ -15,8 +15,8 @@ class SkillList extends React.Component {
         <img src={bgTest} alt="" className="bg-cover" />
         <h3 className="container">Skills</h3>
         <div className="skill-list container">
-          {this.state.skills.map(skill => (
-            <Skill skill={skill} />
+          {this.state.skills.map((skill, index) => (
+            <Skill key={skill.name} skill={skill} />
           ))}
         </div>
       </div>
