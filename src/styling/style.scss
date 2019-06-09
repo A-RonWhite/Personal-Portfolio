@@ -8,11 +8,43 @@
   src: url(../fonts/gill-sans-webfont/Gill-Sans-Light.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Butler Ultra Light";
+  src: url(../fonts/Butler_Webfont/Butler-UltraLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Butler";
+  src: url(../fonts/Butler_Webfont/Butler.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Butler Light";
+  src: url(../fonts/Butler_Webfont/Butler-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Butler Bold";
+  src: url(../fonts/Butler_Webfont/Butler-Bold.woff) format("woff");
+}
+
 @import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Shadows+Into+Light+Two&display=swap");
 
 body {
   margin: 0;
   font-family: "Gill Sans Light";
+}
+
+p {
+  font-family: "Butler Light";
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "Bulter Bold";
+  letter-spacing: 0.3rem;
+  text-align: left;
 }
 
 nav {
@@ -58,9 +90,9 @@ nav {
 .cover-sec {
   height: 100vh;
   /*   background: #253237; */
-  background: url(../images/bg-test-copy.jpg);
+  background: url(../images/cover-bg.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +124,7 @@ nav {
   }
   h2 {
     width: 20%;
-    font-family: "Gill Sans Light";
+    font-family: "Bulter Ultra Light";
     padding-left: 2rem;
     /* This is how I dropped it down, check to see if its responsive */
     padding-top: 2rem;
@@ -105,26 +137,31 @@ nav {
 }
 
 .bio {
-  text-align: center;
   padding-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 10%;
   img {
-    width: 40%;
-    padding-bottom: 5%;
   }
   p {
-    width: 50%;
-    margin: 0 auto;
   }
 }
 
 .skills {
   /*   background: #ced9df; */
   margin-top: 10%;
-  /* Look into at its super janky way of doing it */
-  /*   margin-left: -13%;
-  margin-right: -13%; */
+  /*   background-image: url(../images/skills-bg.svg);
+  background-size: cover;
+  background-position: top; */
   text-align: center;
   position: relative;
+  .bg-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -20;
+  }
   .skill-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -133,6 +170,8 @@ nav {
     }
   }
   h3 {
+    color: white;
+    padding-top: 5rem;
   }
   .foreground-bg {
     height: 100%;
@@ -161,19 +200,30 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "heading heading";
-  padding-top: 10%;
+  padding-top: 20%;
   h3 {
     grid-area: heading;
-    text-align: center;
   }
 }
 
 .portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20%;
-  padding-top: 10%;
+}
+
+.bg-apply {
+  background: purple;
 }
 
 .contact {
+}
+
+footer {
+  text-align: center;
+  p {
+    margin: 0;
+    background: #253237;
+  }
+  img {
+    filter: invert(1);
+    margin-bottom: -10px;
+  }
 }

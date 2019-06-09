@@ -6,6 +6,7 @@ import SkillList from './SkillList';
 import Employment from './Employment';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Footer from './Footer';
 
 class App extends React.Component {
   render() {
@@ -15,11 +16,14 @@ class App extends React.Component {
         <LandingPage />
         <div className="container">
           <Bio />
-          <SkillList addSkill={this.addSkill} loadSkills={this.loadSkills} />
+        </div>
+        <SkillList addSkill={this.addSkill} loadSkills={this.loadSkills} />
+        <div className="container">
           <Employment />
           <Portfolio />
           <Contact />
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

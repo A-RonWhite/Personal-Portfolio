@@ -1,50 +1,24 @@
 import React from 'react';
 import Skill from './Skill';
 import skills from '../skill-list';
+import bgTest from '../images/skills-bg.svg';
 
 class SkillList extends React.Component {
+  state = {
+    skills,
+  };
+
   render() {
     console.log(skills);
     return (
       <div className="skills">
-        <h3>Skills</h3>
-        {/* Redo the way this works so that it's DRY */}
-        <div className="skill-list">
-          <Skill
-            skillImage={skills.skill1.image}
-            skillName={skills.skill1.name}
-          />
-          <Skill
-            skillImage={skills.skill2.image}
-            skillName={skills.skill2.name}
-          />
-          <Skill
-            skillImage={skills.skill3.image}
-            skillName={skills.skill3.name}
-          />
-          <Skill
-            skillImage={skills.skill4.image}
-            skillName={skills.skill4.name}
-          />
-          <Skill
-            skillImage={skills.skill1.image}
-            skillName={skills.skill1.name}
-          />
-          <Skill
-            skillImage={skills.skill2.image}
-            skillName={skills.skill2.name}
-          />
-          <Skill
-            skillImage={skills.skill3.image}
-            skillName={skills.skill3.name}
-          />
-          <Skill
-            skillImage={skills.skill4.image}
-            skillName={skills.skill4.name}
-          />
+        <img src={bgTest} alt="" className="bg-cover" />
+        <h3 className="container">Skills</h3>
+        <div className="skill-list container">
+          {this.state.skills.map(skill => (
+            <Skill skill={skill} />
+          ))}
         </div>
-        <span className="foreground-bg" />
-        <span className="background-bg" />
       </div>
     );
   }

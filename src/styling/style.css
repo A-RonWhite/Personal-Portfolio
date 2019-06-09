@@ -10,9 +10,41 @@
   src: url(../fonts/gill-sans-webfont/Gill-Sans-Light.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Butler Ultra Light";
+  src: url(../fonts/Butler_Webfont/Butler-UltraLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Butler";
+  src: url(../fonts/Butler_Webfont/Butler.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Butler Light";
+  src: url(../fonts/Butler_Webfont/Butler-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Butler Bold";
+  src: url(../fonts/Butler_Webfont/Butler-Bold.woff) format("woff");
+}
+
 body {
   margin: 0;
   font-family: "Gill Sans Light";
+}
+
+p {
+  font-family: "Butler Light";
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "Bulter Bold";
+  letter-spacing: 0.3rem;
+  text-align: left;
 }
 
 nav {
@@ -70,9 +102,9 @@ nav a :focus {
 .cover-sec {
   height: 100vh;
   /*   background: #253237; */
-  background: url(../images/bg-test-copy.jpg);
+  background: url(../images/cover-bg.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +147,7 @@ nav a :focus {
 
 .cover-sec h2 {
   width: 20%;
-  font-family: "Gill Sans Light";
+  font-family: "Bulter Ultra Light";
   padding-left: 2rem;
   /* This is how I dropped it down, check to see if its responsive */
   padding-top: 2rem;
@@ -128,28 +160,32 @@ nav a :focus {
 }
 
 .bio {
-  text-align: center;
   padding-top: 10%;
-}
-
-.bio img {
-  width: 40%;
-  padding-bottom: 5%;
-}
-
-.bio p {
-  width: 50%;
-  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10%;
 }
 
 .skills {
   /*   background: #ced9df; */
   margin-top: 10%;
-  /* Look into at its super janky way of doing it */
-  /*   margin-left: -13%;
-  margin-right: -13%; */
+  /*   background-image: url(../images/skills-bg.svg);
+  background-size: cover;
+  background-position: top; */
   text-align: center;
   position: relative;
+}
+
+.skills .bg-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20;
 }
 
 .skills .skill-list {
@@ -161,6 +197,11 @@ nav a :focus {
 
 .skills .skill-list img {
   width: 100%;
+}
+
+.skills h3 {
+  color: white;
+  padding-top: 5rem;
 }
 
 .skills .foreground-bg {
@@ -192,7 +233,7 @@ nav a :focus {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "heading heading";
-  padding-top: 10%;
+  padding-top: 20%;
 }
 
 .employment h3 {
@@ -200,15 +241,24 @@ nav a :focus {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: heading;
+}
+
+#Layer_1 path {
+  border: 5px solid red;
+}
+
+footer {
   text-align: center;
 }
 
-.portfolio {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 20%;
-  padding-top: 10%;
+footer p {
+  margin: 0;
+  background: #253237;
+}
+
+footer img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-bottom: -10px;
 }
 /*# sourceMappingURL=style.css.map */

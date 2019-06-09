@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Skill = props => {
-  const { skillImage, skillName } = props;
+  const { image, name } = props.skill;
   return (
     <div className="skill">
-      <img src={skillImage} alt="" />
-      <p>{skillName}</p>
+      <img src={image} alt="" />
+      <p>{name}</p>
     </div>
   );
 };
