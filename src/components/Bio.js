@@ -1,5 +1,5 @@
 import React from 'react';
-import bioImage from '../images/about-me-img-orange.svg';
+import bioImage from '../images/svg-bgs/about-me-img.svg';
 
 const Bio = () => (
   <div className="bio">

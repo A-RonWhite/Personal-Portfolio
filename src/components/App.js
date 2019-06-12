@@ -16,11 +16,11 @@ class App extends React.Component {
         <LandingPage />
         <div className="container">
           <Bio />
+          <Portfolio />
         </div>
-        <SkillList addSkill={this.addSkill} loadSkills={this.loadSkills} />
+        <SkillList />
         <div className="container">
           <Employment />
-          <Portfolio />
           <Contact />
         </div>
         <Footer />

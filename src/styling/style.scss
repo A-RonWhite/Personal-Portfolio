@@ -88,9 +88,9 @@ nav {
 }
 
 .cover-sec {
-  height: 100vh;
-  /*   background: #253237; */
-  background: url(../images/cover-bg.jpg);
+  height: 130vh;
+  /*   Find a way to sort this out */
+  background: url(../images/svg-bgs/cover-component-bg.svg);
   background-size: cover;
   background-position: top;
   display: flex;
@@ -156,6 +156,8 @@ nav {
   background-position: top; */
   text-align: center;
   position: relative;
+  background: url(../images/svg-bgs/skill-bg.svg) no-repeat;
+  background-size: cover;
   .bg-cover {
     position: absolute;
     top: 0;

@@ -4,9 +4,8 @@ import portTest from '../images/portfolio-bg-1.svg';
 
 const Portfolio = () => (
   <div className="portfolio">
-    <h3>Portfolio</h3>
     <div className="item1">
-      <object type="image/svg+xml" data={portTest} className="logo">
+      <object type="image/svg+xml" data={portTest} className="portfolio-test">
         You don't support SVGs
       </object>
     </div>

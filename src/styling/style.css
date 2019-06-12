@@ -100,9 +100,9 @@ nav a :focus {
 }
 
 .cover-sec {
-  height: 100vh;
-  /*   background: #253237; */
-  background: url(../images/cover-bg.jpg);
+  height: 130vh;
+  /*   Find a way to sort this out */
+  background: url(../images/svg-bgs/cover-component-bg.svg);
   background-size: cover;
   background-position: top;
   display: -webkit-box;
@@ -179,6 +179,8 @@ nav a :focus {
   background-position: top; */
   text-align: center;
   position: relative;
+  background: url(../images/svg-bgs/skill-bg.svg) no-repeat;
+  background-size: cover;
 }
 
 .skills .bg-cover {
@@ -243,8 +245,8 @@ nav a :focus {
   grid-area: heading;
 }
 
-#Layer_1 path {
-  border: 5px solid red;
+.bg-apply {
+  background: purple;
 }
 
 footer {
