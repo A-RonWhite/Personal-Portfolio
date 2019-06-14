@@ -84,7 +84,7 @@ nav {
 }
 
 .container {
-  padding: 0 10%;
+  padding: 0 15%;
 }
 
 .cover-sec {
@@ -98,11 +98,14 @@ nav {
   justify-content: center;
   color: white;
   h1 {
+    margin-top: -30vh;
     font-family: "Gill Sans Ultra Bold";
     font-size: 6rem;
     letter-spacing: 0.5rem;
     line-height: 5.4rem;
     position: relative;
+    /* DECIDE ON TEXT SHADOW */
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.08);
   }
   h1:before {
     content: "Hi im";
@@ -123,6 +126,10 @@ nav {
     right: 0;
   }
   h2 {
+    /*check to see if its responsive */
+    margin-top: -35vh;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+      0 15px 40px rgba(166, 173, 201, 0.2);
     width: 20%;
     font-family: "Bulter Ultra Light";
     padding-left: 2rem;
@@ -143,21 +150,18 @@ nav {
   align-items: center;
   grid-gap: 10%;
   img {
+    /* Sort out drop shadow */
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.08));
   }
   p {
   }
 }
 
 .skills {
-  /*   background: #ced9df; */
+  background: #404d53;
   margin-top: 10%;
-  /*   background-image: url(../images/skills-bg.svg);
-  background-size: cover;
-  background-position: top; */
   text-align: center;
   position: relative;
-  background: url(../images/svg-bgs/skill-bg.svg) no-repeat;
-  background-size: cover;
   .bg-cover {
     position: absolute;
     top: 0;
@@ -166,35 +170,16 @@ nav {
   }
   .skill-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     img {
       width: 100%;
     }
   }
   h3 {
     color: white;
-    padding-top: 5rem;
   }
-  .foreground-bg {
-    height: 100%;
-    width: 100vw;
-    background: #253237;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -10;
-  }
-  .background-bg {
-    height: 100%;
-    width: 100vw;
-    background: #5c6b73;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: -12.5%;
-    z-index: -20;
-    /*     padding: 10% 0;
-    margin-top: -10%; */
+  #bottom-wave {
+    margin-bottom: -7px;
   }
 }
 
@@ -205,17 +190,22 @@ nav {
   padding-top: 20%;
   h3 {
     grid-area: heading;
+    text-align: center;
   }
 }
 
 .portfolio {
 }
 
-.bg-apply {
-  background: purple;
-}
-
 .contact {
+  text-align: center;
+  padding-top: 10%;
+  img {
+    width: 50%;
+  }
+  input {
+    width: 100%;
+  }
 }
 
 footer {

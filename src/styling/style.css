@@ -96,7 +96,7 @@ nav a :focus {
 }
 
 .container {
-  padding: 0 10%;
+  padding: 0 15%;
 }
 
 .cover-sec {
@@ -118,11 +118,14 @@ nav a :focus {
 }
 
 .cover-sec h1 {
+  margin-top: -30vh;
   font-family: "Gill Sans Ultra Bold";
   font-size: 6rem;
   letter-spacing: 0.5rem;
   line-height: 5.4rem;
   position: relative;
+  /* DECIDE ON TEXT SHADOW */
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.08);
 }
 
 .cover-sec h1:before {
@@ -146,6 +149,10 @@ nav a :focus {
 }
 
 .cover-sec h2 {
+  /*check to see if its responsive */
+  margin-top: -35vh;
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
   width: 20%;
   font-family: "Bulter Ultra Light";
   padding-left: 2rem;
@@ -171,16 +178,17 @@ nav a :focus {
   grid-gap: 10%;
 }
 
+.bio img {
+  /* Sort out drop shadow */
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.08));
+          filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.08));
+}
+
 .skills {
-  /*   background: #ced9df; */
+  background: #404d53;
   margin-top: 10%;
-  /*   background-image: url(../images/skills-bg.svg);
-  background-size: cover;
-  background-position: top; */
   text-align: center;
   position: relative;
-  background: url(../images/svg-bgs/skill-bg.svg) no-repeat;
-  background-size: cover;
 }
 
 .skills .bg-cover {
@@ -193,8 +201,8 @@ nav a :focus {
 .skills .skill-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
 }
 
 .skills .skill-list img {
@@ -203,30 +211,10 @@ nav a :focus {
 
 .skills h3 {
   color: white;
-  padding-top: 5rem;
 }
 
-.skills .foreground-bg {
-  height: 100%;
-  width: 100vw;
-  background: #253237;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -10;
-}
-
-.skills .background-bg {
-  height: 100%;
-  width: 100vw;
-  background: #5c6b73;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: -12.5%;
-  z-index: -20;
-  /*     padding: 10% 0;
-    margin-top: -10%; */
+.skills #bottom-wave {
+  margin-bottom: -7px;
 }
 
 .employment {
@@ -243,10 +231,20 @@ nav a :focus {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: heading;
+  text-align: center;
 }
 
-.bg-apply {
-  background: purple;
+.contact {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.contact img {
+  width: 50%;
+}
+
+.contact input {
+  width: 100%;
 }
 
 footer {
