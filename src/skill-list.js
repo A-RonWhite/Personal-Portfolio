@@ -1,15 +1,15 @@
 const skills = [
   {
     name: 'HTML 5',
-    image: '/images/skill-icons/html-5-icon.png',
+    image: '/images/skill-icons/html-icon.png',
   },
   {
     name: 'CSS 3',
-    image: '/images/skill-icons/css-3-icon.png',
+    image: '/images/skill-icons/css-icon.png',
   },
   {
     name: 'JavaScript (ES6)',
-    image: '/images/skill-icons/javascript-icon.png',
+    image: '/images/skill-icons/js-icon.png',
   },
   {
     name: 'Sass',
@@ -21,7 +21,7 @@ const skills = [
   },
   {
     name: 'React',
-    image: '/images/skill-icons/react.js-icon.png',
+    image: '/images/skill-icons/react-icon.png',
   },
   {
     name: 'Bootstrap 4',
