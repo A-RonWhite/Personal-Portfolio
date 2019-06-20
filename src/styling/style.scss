@@ -36,7 +36,8 @@ body {
 }
 
 p {
-  font-family: "Butler Light";
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 1.2rem;
 }
 
@@ -171,6 +172,12 @@ nav {
   .skill-list {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    /*     .skill-icon {
+      grid-area: skill-icon;
+    }
+    .skill-name {
+      grid-area: skill-name;
+    } */
     img {
       width: 100%;
     }
@@ -195,6 +202,23 @@ nav {
 }
 
 .portfolio {
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #d1997d, #d7a163);
+    overflow: hidden;
+    img {
+      height: 100%;
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+    p {
+      background-image: linear-gradient(to right, #d1997d, #f4ee97);
+    }
+  }
 }
 
 .contact {

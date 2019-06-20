@@ -36,7 +36,8 @@ body {
 }
 
 p {
-  font-family: "Butler Light";
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 1.2rem;
 }
 
@@ -203,6 +204,12 @@ nav a :focus {
   display: grid;
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
+  /*     .skill-icon {
+      grid-area: skill-icon;
+    }
+    .skill-name {
+      grid-area: skill-name;
+    } */
 }
 
 .skills .skill-list img {
@@ -232,6 +239,33 @@ nav a :focus {
   -ms-grid-column-span: 2;
   grid-area: heading;
   text-align: center;
+}
+
+.portfolio .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#d1997d), to(#d7a163));
+  background-image: linear-gradient(to right, #d1997d, #d7a163);
+  overflow: hidden;
+}
+
+.portfolio .item img {
+  height: 100%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.portfolio .item p {
+  background-image: -webkit-gradient(linear, left top, right top, from(#d1997d), to(#f4ee97));
+  background-image: linear-gradient(to right, #d1997d, #f4ee97);
 }
 
 .contact {

@@ -8,7 +8,6 @@ class SkillList extends React.Component {
   };
 
   render() {
-    console.log(skills);
     return (
       <div className="skills">
         <svg
@@ -25,7 +24,7 @@ class SkillList extends React.Component {
 
         <h3 className="container">Core Development Technologies</h3>
         <div className="skill-list container">
-          {this.state.skills.map(skill => (
+          {skills.map(skill => (
             <Skill key={skill.name} skill={skill} />
           ))}
         </div>
