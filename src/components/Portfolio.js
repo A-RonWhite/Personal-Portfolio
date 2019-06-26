@@ -5,12 +5,14 @@ const Portfolio = () => (
   <div className="portfolio">
     <div className="item">
       <img src={portTest} alt="" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis unde,
-        ea est aliquid soluta eligendi quibusdam veritatis nisi, minima quasi
-        sapiente animi accusantium saepe fuga aspernatur culpa at numquam
-        corrupti?
-      </p>
+      <span>
+        <p>UX/UI Design, Project Development</p>
+        <h3>Domus Group</h3>
+        <p>
+          Shortly after joining Domus they started to undertake the massive job
+          of a complete re-build of their website to bring it into
+        </p>
+      </span>
     </div>
   </div>
 );

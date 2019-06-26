@@ -5,7 +5,7 @@ const Skill = props => {
   return (
     <div className="skill">
       <img src={image} alt="" />
-      <p>{name}</p>
+      <h4>{name}</h4>
     </div>
   );
 };

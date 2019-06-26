@@ -2,7 +2,7 @@ import React from 'react';
 
 const LandingPage = () => (
   <div className="cover-sec">
-    {/* Hi I'm is put in through css content :before on h1 */}
+    {/* 'Hi I'm' is put in through css content :before on h1 */}
     <h1>
       Aaron <br /> White
     </h1>

@@ -1,51 +1,55 @@
-/* Run these through a font converter to make it work on all browsers */
-@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:200i,400,600,900|Roboto:300&display=swap");
 @font-face {
   font-family: "Gill Sans Ultra Bold";
   src: url(../fonts/gill-sans-webfont/GillSansUltraBold.woff) format("woff");
 }
 
-@font-face {
-  font-family: "Gill Sans Light";
-  src: url(../fonts/gill-sans-webfont/Gill-Sans-Light.woff) format("woff");
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
-@font-face {
-  font-family: "Butler Ultra Light";
-  src: url(../fonts/Butler_Webfont/Butler-UltraLight.woff) format("woff");
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Muli", sans-serif;
 }
 
-@font-face {
-  font-family: "Butler";
-  src: url(../fonts/Butler_Webfont/Butler.woff) format("woff");
+/* Landing page - Aaron White */
+h1 {
+  font-family: "Gill Sans Ultra Bold";
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
 }
 
-@font-face {
-  font-family: "Butler Light";
-  src: url(../fonts/Butler_Webfont/Butler-Light.woff) format("woff");
+/* Landing page - intro, bio intro */
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
-@font-face {
-  font-family: "Butler Bold";
-  src: url(../fonts/Butler_Webfont/Butler-Bold.woff) format("woff");
+/* General header - portfolio company name, skill & employment heading */
+h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+}
+
+/* Skill names */
+h4 {
+  font-weight: 600;
+}
+
+/* Pre headings for portfolio and employment */
+h5 {
+  font-weight: 200;
 }
 
 body {
   margin: 0;
   font-family: "Gill Sans Light";
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 1.2rem;
-}
-
-h3 {
-  font-size: 3rem;
-  font-family: "Bulter Bold";
-  letter-spacing: 0.3rem;
-  text-align: left;
 }
 
 nav {
@@ -120,9 +124,6 @@ nav a :focus {
 
 .cover-sec h1 {
   margin-top: -30vh;
-  font-family: "Gill Sans Ultra Bold";
-  font-size: 6rem;
-  letter-spacing: 0.5rem;
   line-height: 5.4rem;
   position: relative;
   /* DECIDE ON TEXT SHADOW */
@@ -132,8 +133,7 @@ nav a :focus {
 .cover-sec h1:before {
   content: "Hi im";
   display: block;
-  font-family: "Berkshire Swash", cursive;
-  /* font-family: "Shadows Into Light Two", cursive; */
+  /*     font-family: "Berkshire Swash", cursive; */
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
@@ -155,7 +155,7 @@ nav a :focus {
   -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
           box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
   width: 20%;
-  font-family: "Bulter Ultra Light";
+  font-family: "Muli", sans-serif;
   padding-left: 2rem;
   /* This is how I dropped it down, check to see if its responsive */
   padding-top: 2rem;
@@ -238,7 +238,6 @@ nav a :focus {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: heading;
-  text-align: center;
 }
 
 .portfolio .item {
@@ -255,17 +254,23 @@ nav a :focus {
   background-image: -webkit-gradient(linear, left top, right top, from(#d1997d), to(#d7a163));
   background-image: linear-gradient(to right, #d1997d, #d7a163);
   overflow: hidden;
+  border-radius: 20px;
+  border-top-right-radius: 0;
 }
 
 .portfolio .item img {
+  /* Sort out size of img properly */
   height: 100%;
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
-.portfolio .item p {
-  background-image: -webkit-gradient(linear, left top, right top, from(#d1997d), to(#f4ee97));
-  background-image: linear-gradient(to right, #d1997d, #f4ee97);
+.portfolio .item span {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(#f4ee97));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #f4ee97);
+  margin: 2rem 2rem 2rem 2rem;
+  text-align: right;
+  padding: 1rem;
 }
 
 .contact {
