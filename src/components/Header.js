@@ -1,19 +1,16 @@
 import React from 'react';
 import github from '../images/github-icon.svg';
-import instagram from '../images/instagram.svg';
 import email from '../images/email.svg';
 
 const Header = () => (
   <nav>
     <div className="social">
+      <button type="button">Download CV</button>
       <a href="https://github.com/A-RonWhite" target="blank">
-        <img src={github} alt="" width="30px" id="github" />
-      </a>
-      <a href="https://www.instagram.com/aaronwh1t3/" target="blank">
-        <img src={instagram} alt="" width="30px" />
+        <img src={github} alt="" width="35px" id="github" />
       </a>
       <a href="mailto:webdev@aaronwhite.tech">
-        <img src={email} alt="" width="30px" />
+        <img src={email} alt="" width="35px" />
       </a>
     </div>
     <ul className="nav-links">

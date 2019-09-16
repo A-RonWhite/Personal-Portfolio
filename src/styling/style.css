@@ -57,6 +57,26 @@ body {
   background: url("../images/blue-bg.svg") no-repeat 50% 50%;
 }
 
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  background: black;
+  cursor: pointer;
+  padding: 5% 10%;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10% 35%;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +86,18 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 100;
+}
+
+nav button {
+  font-size: 12px;
+  height: 100%;
+  padding: 1.5% 4%;
+  margin-right: 3%;
+  vertical-align: top;
 }
 
 nav .social {
@@ -77,11 +108,6 @@ nav .social {
 
 nav .social img {
   padding-right: 3%;
-}
-
-nav .social #github {
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 nav .nav-links {
@@ -411,25 +437,5 @@ footer svg {
 footer p {
   margin: 0;
   padding: 5% 0;
-}
-
-button {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: white;
-  background: black;
-  cursor: pointer;
-  padding: 5% 10%;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  text-align: center;
-  padding: 10% 35%;
 }
 /*# sourceMappingURL=style.css.map */

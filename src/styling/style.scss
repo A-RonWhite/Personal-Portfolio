@@ -8,21 +8,46 @@ body {
   background: url("../images/blue-bg.svg") no-repeat 50% 50%;
 }
 
+button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  background: black;
+  cursor: pointer;
+  padding: 5% 10%;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10% 35%;
+}
+
 nav {
   display: flex;
   width: 100%;
   position: fixed;
   align-items: center;
+  justify-content: center;
   z-index: 100;
+  button {
+    font-size: 12px;
+    height: 100%;
+    padding: 1.5% 4%;
+    margin-right: 3%;
+    vertical-align: top;
+  }
   .social {
     height: 100%;
     width: 100%;
     padding: 1%;
     img {
       padding-right: 3%;
-    }
-    #github {
-      filter: invert(1);
     }
   }
   .nav-links {
@@ -279,24 +304,4 @@ footer {
     margin: 0;
     padding: 5% 0;
   }
-}
-
-button {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: white;
-  background: black;
-  cursor: pointer;
-  padding: 5% 10%;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  text-align: center;
-  padding: 10% 35%;
 }
