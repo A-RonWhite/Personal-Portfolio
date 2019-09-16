@@ -11,22 +11,25 @@ const Portfolio = () => (
     <SquigglyLine />
     <PortfolioItem
       websiteImg={domusImg}
-      title="Blah"
-      preHeader="test"
+      preHeader="UX/ UI Development"
+      title="Domus Group"
       copy="Shortly after joining Domus they started to undertake the massive job of
             a complete re-build of their website to bring it into"
+      button="https://domusgroup.com/"
     />
+    <SquigglyLine />
     <PortfolioItemRight
       websiteImg={brooklandsImg}
-      title="Blah"
       preHeader="test"
+      title="Blah"
       copy="Shortly after joining Domus they started to undertake the massive job of
         a complete re-build of their website to bring it into"
     />
+    <SquigglyLine />
     <PortfolioItem
       websiteImg={domusImg}
-      title="Blah"
       preHeader="test"
+      title="Blah"
       copy="Shortly after joining Domus they started to undertake the massive job of
         a complete re-build of their website to bring it into"
     />

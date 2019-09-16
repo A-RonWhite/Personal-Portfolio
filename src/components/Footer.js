@@ -12,7 +12,7 @@ const Footer = () => (
       <rect width="100%" height="176" fill="#fff" />
       <path
         d="M0,13.2s125-29.7,476,0,718,100.71,718,100.71,336,55.07,598,56.52c0,0,47,1.45,129,0v5.79H1Z"
-        fill="#404d53"
+        fill="#9db4c0"
       />
     </svg>
     <p>This is le Footer, foot-her</p>
