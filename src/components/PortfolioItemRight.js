@@ -1,16 +1,16 @@
 import React from 'react';
-import portTest from '../images/domus-curve.png';
 
 const PortfolioItem = props => {
   const { websiteImg, preHeader, title, copy } = props;
+
   return (
-    <div className="item">
-      <img src={websiteImg} alt="" />
+    <div className="item right">
       <span>
         <p>{preHeader}</p>
         <h3>{title}</h3>
         <p>{copy}</p>
       </span>
+      <img src={websiteImg} alt="" />
     </div>
   );
 };

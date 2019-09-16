@@ -214,11 +214,24 @@ nav {
       background-image: linear-gradient(
         to right,
         rgba(255, 0, 0, 0),
-        rgba(244, 238, 151, 1)
+        rgba(244, 238, 151, 0.4)
       );
       margin: 2rem 2rem 2rem 2rem;
       text-align: right;
       padding: 1rem;
+    }
+  }
+  .right {
+    img {
+      padding-right: 2rem;
+    }
+    span {
+      background-image: linear-gradient(
+        to left,
+        rgba(255, 0, 0, 0),
+        rgba(244, 238, 151, 0.4)
+      );
+      text-align: left;
     }
   }
 }
