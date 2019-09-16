@@ -13,18 +13,18 @@ const Portfolio = () => (
       websiteImg={domusImg}
       preHeader="UX/ UI Development"
       title="Domus Group"
-      copy="Shortly after joining Domus they started to undertake the massive job of
-            a complete re-build of their website to bring it into"
+      copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum in tellus eget ultricies. Vestibulum quam ante, consectetur eu ornare eu, lacinia et est. Maecenas gravida lacus ut euismod convallis."
       button="https://domusgroup.com/"
-      altText=""
+      altText="A screen shot of the domus group homepage"
     />
     <SquigglyLine />
     <PortfolioItemRight
       websiteImg={brooklandsImg}
-      preHeader="test"
-      title="Blah"
-      copy="Shortly after joining Domus they started to undertake the massive job of
-        a complete re-build of their website to bring it into"
+      preHeader="Design/ Development"
+      title="Brooklands Interiors"
+      copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum in tellus eget ultricies. Vestibulum quam ante, consectetur eu ornare eu, lacinia et est. Maecenas gravida lacus ut euismod convallis."
+      button="https://brooklandsinteriors.co.uk/"
+      altText="A screen shot of the brooklands interiors homepage"
     />
     <SquigglyLine />
     <PortfolioItem
