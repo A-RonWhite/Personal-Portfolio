@@ -219,6 +219,15 @@ nav {
       margin: 2rem 2rem 2rem 2rem;
       text-align: right;
       padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      button {
+        padding-right: 2rem;
+        justify-content: baseline;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
   .right {

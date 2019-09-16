@@ -16,6 +16,7 @@ const Portfolio = () => (
       copy="Shortly after joining Domus they started to undertake the massive job of
             a complete re-build of their website to bring it into"
       button="https://domusgroup.com/"
+      altText=""
     />
     <SquigglyLine />
     <PortfolioItemRight
