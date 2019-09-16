@@ -9,28 +9,30 @@ class SkillList extends React.Component {
 
   render() {
     return (
-      <div className="skills">
+      <div className="skills" id="skills">
         <svg
-          id="Layer_2"
+          id="top-wave"
           data-name="Layer 2"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1921 243.22"
         >
           <path
             d="M0,225s125,41,476,0S1194,86,1194,86s336-76,598-78c0,0,47-2,129,0V0H1Z"
-            fill="#fffdfd"
+            fill="#e6f2f4"
           />
         </svg>
-
-        <h3 className="container">Core Development Technologies</h3>
-        <div className="skill-list container">
-          {skills.map(skill => (
-            <Skill key={skill.name} skill={skill} />
-          ))}
+        <div>
+          <h3 className="container">Core Development Technologies</h3>
+          <div className="skill-list container">
+            {skills.map(skill => (
+              <Skill key={skill.name} skill={skill} />
+            ))}
+          </div>
+          <p>
+            Please refer to my CV for a full list, including any design
+            programs.
+          </p>
         </div>
-        <p>
-          Please refer to my CV for a full list, including any design programs.
-        </p>
         <svg
           id="bottom-wave"
           data-name="Layer 2"

@@ -1,9 +1,20 @@
 import React from 'react';
-import footerImg from '../images/cover-bobble.svg';
 
 const Footer = () => (
   <footer>
-    <img src={footerImg} alt="" />
+    <svg
+      id="bottom-wave"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1921 176.22"
+    >
+      <title>Untitled-1</title>
+      <rect width="100%" height="176" fill="#fff" />
+      <path
+        d="M0,13.2s125-29.7,476,0,718,100.71,718,100.71,336,55.07,598,56.52c0,0,47,1.45,129,0v5.79H1Z"
+        fill="#404d53"
+      />
+    </svg>
     <p>This is le Footer, foot-her</p>
   </footer>
 );

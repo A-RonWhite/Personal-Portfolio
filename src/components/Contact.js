@@ -5,10 +5,10 @@ const Contact = () => (
   <div className="contact">
     <img src={contactImg} alt="" />
     <form action="">
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
+      <input type="text" placeholder="Full Name" />
+      <input type="text" placeholder="Subject" />
+      <input type="email" placeholder="Email" />
+      <textarea placeholder="Write things here" />
     </form>
   </div>
 );

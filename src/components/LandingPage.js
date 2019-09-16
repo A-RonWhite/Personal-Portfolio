@@ -6,7 +6,12 @@ const LandingPage = () => (
     <h1>
       Aaron <br /> White
     </h1>
-    <h2>A JavaScript focused front-end web developer based in London</h2>
+    <h2>
+      A JavaScript focused <br />
+      front-end web developer
+      <br />
+      based in London
+    </h2>
   </div>
 );
 export default LandingPage;

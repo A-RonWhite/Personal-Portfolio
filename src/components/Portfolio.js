@@ -1,19 +1,34 @@
 import React from 'react';
-import portTest from '../images/domus-curve.png';
+import SquigglyLine from './SquigglyLine';
+import PortfolioItem from './PortfolioItem';
+import domusImg from '../images/domus-curve2.png';
 
 const Portfolio = () => (
-  <div className="portfolio">
-    <div className="item">
-      <img src={portTest} alt="" />
-      <span>
-        <p>UX/UI Design, Project Development</p>
-        <h3>Domus Group</h3>
-        <p>
-          Shortly after joining Domus they started to undertake the massive job
-          of a complete re-build of their website to bring it into
-        </p>
-      </span>
-    </div>
+  <div className="portfolio" id="portfolio">
+    {/* Add props to change colour */}
+    <SquigglyLine />
+    <PortfolioItem
+      websiteImg={domusImg}
+      title="Blah"
+      preHeader="test"
+      copy="Shortly after joining Domus they started to undertake the massive job of
+            a complete re-build of their website to bring it into"
+    />
+    <PortfolioItem
+      websiteImg={domusImg}
+      title="Blah"
+      preHeader="test"
+      copy="Shortly after joining Domus they started to undertake the massive job of
+        a complete re-build of their website to bring it into"
+    />
+    <PortfolioItem
+      websiteImg={domusImg}
+      title="Blah"
+      preHeader="test"
+      copy="Shortly after joining Domus they started to undertake the massive job of
+        a complete re-build of their website to bring it into"
+    />
+    <SquigglyLine />
   </div>
 );
 export default Portfolio;

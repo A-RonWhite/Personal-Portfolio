@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:200i,400,600,900|Roboto:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Muli:200i,400,600,900|Roboto:300&display=swap");
+/* Run these through a font converter to make it work on all browsers */
 @font-face {
   font-family: "Gill Sans Ultra Bold";
   src: url(../fonts/gill-sans-webfont/GillSansUltraBold.woff) format("woff");
@@ -13,8 +14,10 @@ p {
 h2,
 h3,
 h4,
-h5 {
+h5,
+a {
   font-family: "Muli", sans-serif;
+  margin: 0;
 }
 
 /* Landing page - Aaron White */
@@ -50,10 +53,11 @@ h5 {
 body {
   margin: 0;
   font-family: "Gill Sans Light";
+  /*   background-color: #eaf5f6; */
+  background: url("../images/blue-bg.svg") no-repeat 50% 50%;
 }
 
 nav {
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,6 +66,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 nav .social {
@@ -91,13 +96,13 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   list-style-type: none;
 }
 
 nav a :focus {
-  color: white;
+  color: black;
 }
 
 .container {
@@ -133,7 +138,7 @@ nav a :focus {
 .cover-sec h1:before {
   content: "Hi im";
   display: block;
-  /*     font-family: "Berkshire Swash", cursive; */
+  font-family: "Berkshire Swash", cursive;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
@@ -154,8 +159,7 @@ nav a :focus {
   margin-top: -35vh;
   -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
           box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
-  width: 20%;
-  font-family: "Muli", sans-serif;
+  font-size: 1.5rem;
   padding-left: 2rem;
   /* This is how I dropped it down, check to see if its responsive */
   padding-top: 2rem;
@@ -168,7 +172,7 @@ nav a :focus {
 }
 
 .bio {
-  padding-top: 10%;
+  padding: 10% 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -190,13 +194,21 @@ nav a :focus {
   margin-top: 10%;
   text-align: center;
   position: relative;
-}
-
-.skills .bg-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -20;
+  padding: 13% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
 }
 
 .skills .skill-list {
@@ -204,12 +216,11 @@ nav a :focus {
   display: grid;
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
-  /*     .skill-icon {
-      grid-area: skill-icon;
-    }
-    .skill-name {
-      grid-area: skill-name;
-    } */
+  padding-bottom: 3rem;
+}
+
+.skills .skill-list .skill {
+  padding: 0 15%;
 }
 
 .skills .skill-list img {
@@ -217,11 +228,20 @@ nav a :focus {
 }
 
 .skills h3 {
-  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.skills #top-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .skills #bottom-wave {
-  margin-bottom: -7px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .employment {
@@ -229,15 +249,60 @@ nav a :focus {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "heading heading";
-  padding-top: 20%;
+      grid-template-areas: "heading heading" "top-line top-line" "job1 job2" "bottom-line bottom-line";
+  padding-top: 10%;
+  grid-gap: 0 10%;
 }
 
-.employment h3 {
+.employment .job:nth-of-type(1) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: job1;
+}
+
+.employment .job:nth-of-type(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: job2;
+}
+
+.employment .squiggly-line {
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.employment .squiggly-line:nth-of-type(1) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: top-line;
+}
+
+.employment .squiggly-line:nth-of-type(2) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: bottom-line;
+}
+
+.employment .title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: heading;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.portfolio {
+  padding: 10% 0;
+  text-align: center;
+}
+
+.portfolio .squiggly-line {
+  width: 15%;
 }
 
 .portfolio .item {
@@ -256,6 +321,9 @@ nav a :focus {
   overflow: hidden;
   border-radius: 20px;
   border-top-right-radius: 0;
+  margin: 10% 0;
+  -webkit-box-shadow: -8px 16px 31px -15px rgba(0, 0, 0, 0.44);
+          box-shadow: -8px 16px 31px -15px rgba(0, 0, 0, 0.44);
 }
 
 .portfolio .item img {
@@ -275,29 +343,43 @@ nav a :focus {
 
 .contact {
   text-align: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10%;
   padding-top: 10%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 10% 0;
 }
 
 .contact img {
-  width: 50%;
+  width: 100%;
 }
 
-.contact input {
+.contact input,
+.contact textarea {
   width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid grey;
+  font-size: inherit;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
 }
 
 footer {
   text-align: center;
+  background-size: cover;
+  height: 100%;
+  background-color: #404d53;
+  margin-top: 5%;
+}
+
+footer svg {
+  margin-left: -1px;
 }
 
 footer p {
   margin: 0;
-  background: #253237;
-}
-
-footer img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  margin-bottom: -10px;
+  padding: 5% 0;
 }
 /*# sourceMappingURL=style.css.map */
