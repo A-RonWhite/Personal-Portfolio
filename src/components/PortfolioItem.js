@@ -9,9 +9,11 @@ const PortfolioItem = props => {
         <p>{preHeader}</p>
         <h3>{title}</h3>
         <p>{copy}</p>
-        <a href={button} target="_blank" rel="noopener noreferrer">
-          <button type="button">Visit</button>
-        </a>
+        <div>
+          <a href={button} target="_blank" rel="noopener noreferrer">
+            <button type="button">Visit</button>
+          </a>
+        </div>
       </span>
     </div>
   );

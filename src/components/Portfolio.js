@@ -15,7 +15,7 @@ const Portfolio = () => (
       title="Domus Group"
       copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum in tellus eget ultricies. Vestibulum quam ante, consectetur eu ornare eu, lacinia et est. Maecenas gravida lacus ut euismod convallis."
       button="https://domusgroup.com/"
-      altText="A screen shot of the domus group homepage"
+      altText="A screen shot of the domus group homepage with a wave effect along the edge"
     />
     <SquigglyLine />
     <PortfolioItemRight
@@ -24,15 +24,17 @@ const Portfolio = () => (
       title="Brooklands Interiors"
       copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum in tellus eget ultricies. Vestibulum quam ante, consectetur eu ornare eu, lacinia et est. Maecenas gravida lacus ut euismod convallis."
       button="https://brooklandsinteriors.co.uk/"
-      altText="A screen shot of the brooklands interiors homepage"
+      altText="A screen shot of the brooklands interiors homepage with a wave effect along the edge"
     />
     <SquigglyLine />
     <PortfolioItem
       websiteImg={domusImg}
-      preHeader="test"
-      title="Blah"
+      preHeader="Design/ Development"
+      title="Tabb"
       copy="Shortly after joining Domus they started to undertake the massive job of
         a complete re-build of their website to bring it into"
+      button="https://brooklandsinteriors.co.uk/"
+      altText="A screen shot of the Tabb homepage with a wave effect along the edge"
     />
     <SquigglyLine />
   </div>
