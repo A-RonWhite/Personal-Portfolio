@@ -59,7 +59,6 @@ body {
 
 button {
   border: none;
-  font-family: inherit;
   font-size: inherit;
   color: white;
   background: black;
@@ -67,14 +66,16 @@ button {
   padding: 5% 10%;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
+  letter-spacing: 2px;
+  font-weight: 500;
   outline: none;
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 3px;
   text-align: center;
   padding: 10% 35%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 nav {
@@ -367,6 +368,15 @@ nav a :focus {
   height: 100%;
   padding-top: 2rem;
   padding-left: 2rem;
+}
+
+.portfolio .item button {
+  background: #7e5b49;
+}
+
+.portfolio .item button:hover {
+  background: #ebebeb;
+  color: #7e5b49;
 }
 
 .portfolio .item div {

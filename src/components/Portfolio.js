@@ -38,7 +38,9 @@ const Portfolio = () => (
     />
     <SquigglyLine />
     <div className="other-sites">
-      <button type="button">Site1</button>
+      <a href="">
+        <button type="button">Site1</button>
+      </a>
       <button type="button">Site2</button>
       <button type="button">Site3</button>
     </div>
