@@ -5,7 +5,7 @@ import email from '../images/email.svg';
 const Header = () => (
   <nav>
     <div className="social">
-      <button type="button">Download CV</button>
+      <button type="button">CV Download</button>
       <a href="https://github.com/A-RonWhite" target="blank">
         <img src={github} alt="" width="35px" id="github" />
       </a>

@@ -218,6 +218,12 @@ nav {
   .squiggly-line {
     width: 15%;
   }
+  .other-sites {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    padding-top: 10%;
+  }
   .item {
     position: relative;
     display: flex;

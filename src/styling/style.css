@@ -332,6 +332,15 @@ nav a :focus {
   width: 15%;
 }
 
+.portfolio .other-sites {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
+  padding-top: 10%;
+}
+
 .portfolio .item {
   position: relative;
   display: -webkit-box;

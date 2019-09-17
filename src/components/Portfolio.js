@@ -37,6 +37,11 @@ const Portfolio = () => (
       altText="A screen shot of the Tabb homepage with a wave effect along the edge"
     />
     <SquigglyLine />
+    <div className="other-sites">
+      <button type="button">Site1</button>
+      <button type="button">Site2</button>
+      <button type="button">Site3</button>
+    </div>
   </div>
 );
 export default Portfolio;
