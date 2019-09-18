@@ -5,10 +5,10 @@ import PortfolioItemRight from './PortfolioItemRight';
 import Button from './Button';
 import domusImg from '../images/domus-curve3.png';
 import brooklandsImg from '../images/brooklands-curve.png';
+import portfolioImg from '../images/portfolio-site-curve.png';
 
 const Portfolio = () => (
   <div className="portfolio" id="portfolio">
-    {/* Add props to change colour */}
     <SquigglyLine />
     <PortfolioItem
       websiteImg={domusImg}
@@ -29,7 +29,7 @@ const Portfolio = () => (
     />
     <SquigglyLine />
     <PortfolioItem
-      websiteImg={domusImg}
+      websiteImg={portfolioImg}
       preHeader="Design/ Development"
       title="Tabb"
       copy="Shortly after joining Domus they started to undertake the massive job of
