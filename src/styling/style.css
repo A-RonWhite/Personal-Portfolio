@@ -83,12 +83,12 @@ h5 {
 }
 
 .draw-border:hover {
-  color: #ac8a4c;
+  color: #f0f0f0;
   background: none;
 }
 
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color: #ac8a4c;
+  border-color: #f0f0f0;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -172,11 +172,18 @@ nav .social {
 }
 
 nav .social #github {
-  padding-left: 3%;
+  padding-left: 4%;
 }
 
 nav .social img {
-  padding-right: 3%;
+  padding-right: 4%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+nav .social img:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 nav .social a {
@@ -200,6 +207,12 @@ nav a {
   color: black;
   text-decoration: none;
   list-style-type: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: white;
 }
 
 nav a :focus {

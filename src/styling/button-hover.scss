@@ -62,7 +62,7 @@
 }
 
 .draw-border {
-  @include btn-border-drawing(#131313, #ac8a4c, 4px, bottom, right);
+  @include btn-border-drawing(#131313, #f0f0f0, 4px, bottom, right);
 }
 
 .btn-1 {

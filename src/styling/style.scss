@@ -40,10 +40,14 @@ nav {
     width: 100%;
     padding: 1%;
     #github {
-      padding-left: 3%;
+      padding-left: 4%;
     }
     img {
-      padding-right: 3%;
+      padding-right: 4%;
+      transition: 0.2s ease;
+      &:hover {
+        filter: invert(1);
+      }
     }
     a {
       height: 100%;
@@ -64,6 +68,10 @@ nav {
     color: black;
     text-decoration: none;
     list-style-type: none;
+    transition: 0.2s ease;
+    &:hover {
+      color: white;
+    }
     :focus {
       color: black;
     }
