@@ -31,12 +31,12 @@
 }
 
 .draw-border:hover {
-  color: #f0f0f0;
+  color: #fafafa;
   background: none;
 }
 
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color: #f0f0f0;
+  border-color: #fafafa;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;

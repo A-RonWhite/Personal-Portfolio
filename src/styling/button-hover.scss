@@ -1,5 +1,5 @@
 @mixin btn-border-drawing(
-  $color: #ccc,
+  $color: rgb(235, 235, 235),
   $hover: black,
   $width: 2px,
   $vertical: top,
@@ -62,7 +62,7 @@
 }
 
 .draw-border {
-  @include btn-border-drawing(#131313, #f0f0f0, 4px, bottom, right);
+  @include btn-border-drawing(#131313, #fafafa, 4px, bottom, right);
 }
 
 .btn-1 {

@@ -21,7 +21,6 @@ class App extends React.Component {
         <SkillList />
         <div className="container">
           <Employment />
-          <Contact />
         </div>
         <Footer />
       </React.Fragment>

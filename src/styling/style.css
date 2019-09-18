@@ -83,12 +83,12 @@ h5 {
 }
 
 .draw-border:hover {
-  color: #f0f0f0;
+  color: #fafafa;
   background: none;
 }
 
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color: #f0f0f0;
+  border-color: #fafafa;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -124,7 +124,7 @@ body {
   margin: 0;
   font-family: "Gill Sans Light";
   /*   background-color: #eaf5f6; */
-  background: url("../images/blue-bg.svg") no-repeat 50% 50%;
+  background: url("../images/blue-bg.svg") no-repeat 35% 65%;
 }
 
 .btn-2 {
@@ -238,7 +238,22 @@ nav a :focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: black;
+}
+
+.cover-sec .center-pos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
 }
 
 .cover-sec h1 {
@@ -247,6 +262,7 @@ nav a :focus {
   position: relative;
   /* DECIDE ON TEXT SHADOW */
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.08);
+  padding-right: 1.5rem;
 }
 
 .cover-sec h1:before {
@@ -261,7 +277,7 @@ nav a :focus {
 .cover-sec h1:after {
   content: "";
   position: absolute;
-  border-right: 1px solid white;
+  border-right: 1px solid black;
   height: 70%;
   width: 1px;
   bottom: 5%;
@@ -275,8 +291,8 @@ nav a :focus {
           box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
   font-size: 1.5rem;
   padding-left: 2rem;
+  width: 100%;
   /* This is how I dropped it down, check to see if its responsive */
-  padding-top: 2rem;
 }
 
 .cover-sec #bobble {

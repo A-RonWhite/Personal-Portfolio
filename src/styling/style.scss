@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Gill Sans Light";
   /*   background-color: #eaf5f6; */
-  background: url("../images/blue-bg.svg") no-repeat 50% 50%;
+  background: url("../images/blue-bg.svg") no-repeat 35% 65%;
 }
 
 .btn-2 {
@@ -91,13 +91,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
+  .center-pos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(3rem);
+  }
   h1 {
     margin-top: -30vh;
     line-height: 5.4rem;
     position: relative;
     /* DECIDE ON TEXT SHADOW */
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.08);
+    padding-right: 1.5rem;
   }
   h1:before {
     content: "Hi im";
@@ -110,7 +118,7 @@ nav {
   h1:after {
     content: "";
     position: absolute;
-    border-right: 1px solid white;
+    border-right: 1px solid black;
     height: 70%;
     width: 1px;
     bottom: 5%;
@@ -123,8 +131,8 @@ nav {
       0 15px 40px rgba(166, 173, 201, 0.2);
     font-size: 1.5rem;
     padding-left: 2rem;
+    width: 100%;
     /* This is how I dropped it down, check to see if its responsive */
-    padding-top: 2rem;
   }
   #bobble {
     position: absolute;
