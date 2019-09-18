@@ -15,7 +15,7 @@ const Footer = () => (
         fill="#9db4c0"
       />
     </svg>
-    <p>Design &amp; Created by Aaron White</p>
+    <p>Designed &amp; Created by Aaron White</p>
   </footer>
 );
 export default Footer;

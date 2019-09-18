@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PortfolioItem = props => {
-  const { websiteImg, preHeader, title, copy, button, altText } = props;
+  const { websiteImg, preHeader, title, copy, link, altText } = props;
   return (
     <div className="item">
       <img src={websiteImg} alt={altText} />
@@ -10,8 +10,13 @@ const PortfolioItem = props => {
         <h3>{title}</h3>
         <p>{copy}</p>
         <div>
-          <a href={button} target="_blank" rel="noopener noreferrer">
-            <button type="button">Visit</button>
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-2"
+          >
+            Visit
           </a>
         </div>
       </span>

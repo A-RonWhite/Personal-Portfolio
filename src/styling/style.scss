@@ -1,5 +1,6 @@
 @import "fonts";
 @import "text-styles";
+@import "button-hover";
 
 body {
   margin: 0;
@@ -8,24 +9,23 @@ body {
   background: url("../images/blue-bg.svg") no-repeat 50% 50%;
 }
 
-button {
-  border: none;
-  font-size: inherit;
-  color: white;
-  background: black;
-  cursor: pointer;
-  padding: 5% 10%;
+.btn-2 {
+  text-decoration: none;
+  padding: 1rem 4rem;
+  background: #495869;
+  color: rgb(236, 236, 236);
   display: inline-block;
-  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 600;
   letter-spacing: 2px;
-  font-weight: 500;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-  border-radius: 3px;
-  text-align: center;
-  padding: 10% 35%;
-  transition: 0.4s;
+  text-transform: uppercase;
+  align-self: flex-end;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    /* box-shadow: 0px 5px rgb(150, 150, 150); */
+    transform: translateY(-4px);
+    background: #394552;
+  }
 }
 
 nav {
@@ -35,20 +35,20 @@ nav {
   align-items: center;
   justify-content: center;
   z-index: 100;
-  button {
-    font-size: 12px;
-    height: 100%;
-    padding: 1.5% 4%;
-    margin-right: 3%;
-    vertical-align: top;
-    font-weight: 400;
-  }
   .social {
     height: 100%;
     width: 100%;
     padding: 1%;
+    #github {
+      padding-left: 3%;
+    }
     img {
       padding-right: 3%;
+    }
+    a {
+      height: 100%;
+      font-weight: 600;
+      vertical-align: middle;
     }
   }
   .nav-links {
@@ -242,18 +242,13 @@ nav {
       padding-top: 2rem;
       padding-left: 2rem;
     }
-    button {
-      background: #7e5b49;
-    }
-    button:hover {
-      background: #ebebeb;
-      color: #7e5b49;
-    }
     div {
-      height: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: row-reverse;
+      height: 100%;
+    }
+    .btn-align-left {
+      flex-direction: row;
     }
     span {
       background-image: linear-gradient(
