@@ -14,7 +14,7 @@ const Portfolio = () => (
       websiteImg={portfolioImg}
       preHeader="Development"
       title="Tabb"
-      copy="Tabb is a CRUD app that allows you to save useful links and set tags to keep them easily organised. Easy on any device, means that whenever or wherever you see a website it is simple to save interesting websites to your own account to view anytime. Built with React on the front-end and Express on the back-end."
+      copy="Tabb is a CRUD app that allows you to save useful links and set tags to keep them easily organised, built with React on the front-end and Express on the back-end. I used React hooks through the projects and it was my first time using a back-end language to create my own API. Postman was a life saver when it came to testing my CRUD methods."
       link="https://floating-fjord-09993.herokuapp.com"
       altText="A screen shot of the Tabb homepage with a wave effect along the edge"
     />
@@ -23,7 +23,7 @@ const Portfolio = () => (
       websiteImg={brooklandsImg}
       preHeader="Design/ Development"
       title="Brooklands Interiors"
-      copy="This is a single page static site created as a temporary page for Brooklands Interiors using bootstrap. They wanted something that was well designed and met their branding with enough information to entice customers into their newly opened showroom. I had to work to a site deadline to provide them with a site before their opening date, the full site is currently being developed in Wordpress."
+      copy="A single page static temporary page created for Brooklands Interiors using bootstrap. They wanted something that was well designed and met their branding with enough information to entice customers into their newly opened showroom. I had to work to a tight deadline to provide them with a site before their opening date, the full site is currently being developed in Wordpress."
       link="https://brooklandsinteriors.co.uk/"
       altText="A screen shot of the brooklands interiors homepage with a wave effect along the edge"
     />
