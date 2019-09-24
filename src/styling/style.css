@@ -83,12 +83,12 @@ h5 {
 }
 
 .draw-border:hover {
-  color: #fafafa;
+  color: #829caa;
   background: none;
 }
 
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color: #fafafa;
+  border-color: #829caa;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;

@@ -5,7 +5,6 @@ import Bio from './Bio';
 import SkillList from './SkillList';
 import Employment from './Employment';
 import Portfolio from './Portfolio';
-import Contact from './Contact';
 import Footer from './Footer';
 
 class App extends React.Component {
