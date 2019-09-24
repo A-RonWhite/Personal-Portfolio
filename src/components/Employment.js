@@ -1,9 +1,9 @@
 import React from 'react';
-import SquigglyLine from './SquigglyLine';
+import SquigglyLineBrown from './SquigglyLineBrown';
 
 const Employment = () => (
   <div className="employment">
-    <SquigglyLine />
+    <SquigglyLineBrown />
     <h3 className="title">Experience</h3>
     <div className="job">
       <h5>March 2017 - April 2019</h5>
@@ -38,7 +38,7 @@ const Employment = () => (
         amazing experience that will lend well into any future jobs.
       </p>
     </div>
-    <SquigglyLine />
+    <SquigglyLineBrown />
   </div>
 );
 export default Employment;
