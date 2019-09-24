@@ -20,6 +20,8 @@ const Employment = () => (
           </li>
           <li>Developed and implimented SEO stratergies and guidelines</li>
         </ul>
+        A link to the domus website which was built in Ruby On Rails can be
+        found above in the portfolio section.
       </p>
     </div>
     <div className="job">
@@ -27,9 +29,13 @@ const Employment = () => (
       <h3>Freelance Web Development</h3>
       <p>
         My freelance work to date consists of developing smaller websites for
-        start ups or re-designing existing sites. This has allowed me to try out
-        many different stacks and work flows. For a more in-depth look into the
-        sites created please refer to my website.
+        start ups or re-designing existing sites. My Graphic Design education
+        helped me in my freelance work due to most clients generally wanting
+        someone to do everything (logo, site design/layout, branding etc). This
+        has given me the freedom to develop and try out different stacks/
+        workflows over the past few years. The experience working with clients
+        to a deadline as well as keep their needs in mind at every step has been
+        amazing experience that will lend well into any future jobs.
       </p>
     </div>
     <SquigglyLine />
