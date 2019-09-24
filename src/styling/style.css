@@ -292,7 +292,7 @@ nav a :focus {
           box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
   font-size: 1.5rem;
   padding-left: 2rem;
-  width: 100%;
+  /* width: 100%; */
   /* This is how I dropped it down, check to see if its responsive */
 }
 
@@ -306,8 +306,8 @@ nav a :focus {
   padding: 10% 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -439,8 +439,8 @@ nav a :focus {
 .portfolio .other-sites {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5%;
   padding-top: 10%;
 }
@@ -556,5 +556,24 @@ footer svg {
 footer p {
   margin: 0;
   padding: 5% 0;
+}
+
+@media (max-width: 1000px) {
+  .center-pos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .center-pos h2 {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .item img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

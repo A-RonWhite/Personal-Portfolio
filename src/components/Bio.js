@@ -3,6 +3,7 @@ import bioImage from '../images/svg-bgs/about-me-img.svg';
 
 const Bio = () => (
   <div className="bio">
+    <img src={bioImage} alt="" />
     <div>
       <h2>
         I’m a 26 year old self taught developer with an eye for design and a
@@ -16,7 +17,6 @@ const Bio = () => (
         desire to transition into becoming a full stack developer.
       </p>
     </div>
-    <img src={bioImage} alt="" />
   </div>
 );
 export default Bio;

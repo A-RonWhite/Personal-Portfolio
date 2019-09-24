@@ -131,7 +131,7 @@ nav {
       0 15px 40px rgba(166, 173, 201, 0.2);
     font-size: 1.5rem;
     padding-left: 2rem;
-    width: 100%;
+    /* width: 100%; */
     /* This is how I dropped it down, check to see if its responsive */
   }
   #bobble {
@@ -144,7 +144,7 @@ nav {
 .bio {
   padding: 10% 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   align-items: center;
   grid-gap: 10%;
   img {
@@ -236,7 +236,7 @@ nav {
   }
   .other-sites {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5%;
     padding-top: 10%;
   }
@@ -328,5 +328,27 @@ footer {
   p {
     margin: 0;
     padding: 5% 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .center-pos {
+    grid-template-columns: 1fr;
+    h2 {
+      display: none;
+    }
+  }
+  nav {
+    ul {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .item {
+    img {
+      display: none;
+    }
   }
 }
