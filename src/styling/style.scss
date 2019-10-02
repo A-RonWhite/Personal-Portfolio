@@ -272,6 +272,14 @@ nav {
         rgba(255, 0, 0, 0),
         rgba(244, 238, 151, 0.4)
       );
+      p {
+        margin: 0;
+        margin-top: 0.8rem;
+      }
+      h3 {
+        text-transform: uppercase;
+        color: #5c2910;
+      }
       margin: 2rem 2rem 2rem 2rem;
       text-align: right;
       padding: 1rem;
