@@ -6,7 +6,10 @@ import email from '../images/email.svg';
 const Header = () => (
   <nav>
     <div className="social">
-      <Button buttonLink="" buttonText="CV Download" />
+      <Button
+        buttonLink="https://drive.google.com/open?id=16Aji8IvNNBPrpq2WDg014XjiGdvJjsgh"
+        buttonText="CV Download"
+      />
       <a href="https://github.com/A-RonWhite" target="blank">
         <img src={github} alt="" width="40px" id="github" />
       </a>
