@@ -30,15 +30,16 @@ const Portfolio = () => (
     <SquigglyLine />
     <PortfolioItem
       websiteImg={domusImg}
-      preHeader="Design/ Development"
-      title="This website"
-      copy="This portfolio site is built in React, using Sass and was a fantastic opportunity to explore design without the restrictions that come with client briefs. I wanted to push my design limitations with this project instead of conforming to a layout I could easily/ quickly produce. I also took the time to familiarise myself with using Sass through-out the project."
-      link="https://brooklandsinteriors.co.uk/"
+      preHeader="Design"
+      title="Domus Group"
+      copy="My main role with regaurds to the remaking of the domus website was UX/UI and layout design for both the front-end and CMS. Domus sell a vast amount of different flooring products each with a multitude of specifications and relevant information to the customer so UX was a big priority for them. This meant a lot of time was spent tweaking designs and layouts to create an easy and fluid customer journey whilst also making all the necessary details easy to find. Through-out the process I acted as a consultant when meeting and dealing with the agency hired to develop the site."
+      link="https://domusgroup.com"
       altText="A screen shot of my portfolio homepage with a wave effect along the edge"
     />
     <SquigglyLine />
+    <h3>Other Sites</h3>
     <div className="other-sites">
-      <Button buttonText="Domus Group" buttonLink="https://domusgroup.com/" />
+      {/* <Button buttonText="Domus Group" buttonLink="https://domusgroup.com/" /> */}
       <Button
         buttonText="Travel Blog"
         buttonLink="https://wheresciera.co.uk/"
