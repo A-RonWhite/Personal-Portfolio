@@ -486,6 +486,7 @@ nav a :focus {
 .portfolio .item span h3 {
   text-transform: uppercase;
   color: #5c2910;
+  font-weight: 600;
 }
 
 .portfolio .right img {
