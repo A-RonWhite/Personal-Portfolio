@@ -222,7 +222,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5%;
-    padding-top: 10%;
+    padding-top: 4rem;
+  }
+  h4 {
+    padding-top: 4rem;
   }
   .item {
     position: relative;

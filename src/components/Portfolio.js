@@ -37,7 +37,7 @@ const Portfolio = () => (
       altText="A screen shot of my portfolio homepage with a wave effect along the edge"
     />
     <SquigglyLine />
-    <h3>Other Sites</h3>
+    <h4>Other Sites</h4>
     <div className="other-sites">
       <Button
         buttonText="New Brooklands Site"

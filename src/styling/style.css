@@ -43,6 +43,7 @@ h3 {
 /* Skill names */
 h4 {
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 /* Pre headings for portfolio and employment */
@@ -414,7 +415,11 @@ nav a :focus {
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5%;
-  padding-top: 10%;
+  padding-top: 4rem;
+}
+
+.portfolio h4 {
+  padding-top: 4rem;
 }
 
 .portfolio .item {
