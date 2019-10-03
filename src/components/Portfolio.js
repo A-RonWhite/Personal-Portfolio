@@ -21,7 +21,7 @@ const Portfolio = () => (
     <SquigglyLine />
     <PortfolioItemRight
       websiteImg={brooklandsImg}
-      preHeader="Design/ Development"
+      preHeader="Design / Development"
       title="Brooklands Interiors"
       copy="A single page static temporary page created for Brooklands Interiors using bootstrap. They wanted something that was well designed and met their branding with enough information to entice customers into their newly opened showroom. I had to work to a tight deadline to provide them with a site before their opening date, the full site is currently being developed in Wordpress."
       link="https://brooklandsinteriors.co.uk/"
@@ -30,7 +30,7 @@ const Portfolio = () => (
     <SquigglyLine />
     <PortfolioItem
       websiteImg={domusImg}
-      preHeader="Design"
+      preHeader="Design / UX"
       title="Domus Group"
       copy="My main role with regaurds to the remaking of the domus website was UX/UI and layout design for both the front-end and CMS. Domus sell a vast amount of different flooring products each with a multitude of specifications and relevant information to the customer so UX was a big priority for them. This meant a lot of time was spent tweaking designs and layouts to create an easy and fluid customer journey whilst also making all the necessary details easy to find. Through-out the process I acted as a consultant when meeting and dealing with the agency hired to develop the site."
       link="https://domusgroup.com"
@@ -39,9 +39,12 @@ const Portfolio = () => (
     <SquigglyLine />
     <h3>Other Sites</h3>
     <div className="other-sites">
-      {/* <Button buttonText="Domus Group" buttonLink="https://domusgroup.com/" /> */}
       <Button
-        buttonText="Travel Blog"
+        buttonText="New Brooklands Site"
+        buttonLink="https://www.inside-hobby-jacket.co.uk/"
+      />
+      <Button
+        buttonText="Where's Ciera - Travel Blog"
         buttonLink="https://wheresciera.co.uk/"
       />
       <Button buttonText="Instagram Opener" buttonLink="www.google.com" />
