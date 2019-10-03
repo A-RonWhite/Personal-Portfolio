@@ -23,7 +23,7 @@ class SkillList extends React.Component {
         </svg>
         <div>
           <h3 className="container">Core Development Technologies</h3>
-          <div className="skill-list container">
+          <div className="skill-list">
             {skills.map(skill => (
               <Skill key={skill.name} skill={skill} />
             ))}

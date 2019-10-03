@@ -327,9 +327,6 @@ nav a :focus {
   text-align: center;
   position: relative;
   padding: 13% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -346,9 +343,10 @@ nav a :focus {
 .skills .skill-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   padding-bottom: 3rem;
+  margin: 0 10%;
 }
 
 .skills .skill-list .skill {
