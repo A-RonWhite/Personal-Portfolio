@@ -47,7 +47,10 @@ const Portfolio = () => (
         buttonText="Where's Ciera - Travel Blog"
         buttonLink="https://wheresciera.co.uk/"
       />
-      <Button buttonText="Instagram Opener" buttonLink="www.google.com" />
+      <Button
+        buttonText="Instagram Opener"
+        buttonLink="https://quirky-meninsky-4853ff.netlify.com/"
+      />
     </div>
   </div>
 );
