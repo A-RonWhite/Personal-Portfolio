@@ -545,9 +545,16 @@ footer p {
 }
 
 @media (max-width: 1000px) {
+  .cover-sec h1 {
+    font-size: 4rem;
+  }
+  .cover-sec h1:after {
+    border: 0;
+  }
   .center-pos {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .center-pos h2 {
     display: none;

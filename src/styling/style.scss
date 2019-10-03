@@ -151,8 +151,6 @@ nav {
     /* Sort out drop shadow */
     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.08));
   }
-  p {
-  }
 }
 
 .skills {
@@ -328,8 +326,16 @@ footer {
 }
 
 @media (max-width: 1000px) {
+  .cover-sec {
+    h1 {
+      font-size: 4rem;
+    }
+    h1:after {
+      border: 0;
+    }
+  }
   .center-pos {
-    grid-template-columns: 1fr;
+    display: flex !important;
     h2 {
       display: none;
     }
